@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="image_src" href="phonto_1.JPG" />
+    <title>Mementos</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel=“style sheet.” href=“pages/print.css” type=“text/css” media=“print”>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+<body>
+
+    <a href="index.html"><div id="heading"></div></a>
+    <div id="parent">
+
+        <div id="one">
+            <h2 id="genre3">Film</h2>
+            <ul>
+                <li>
+                    <a href="pages/ben_giles_two_shorts.html">Ben Giles - Two Shorts</a>
+                </li>
+                <li>
+                    <a href="pages/nick_alonzo_the_ipod.html">Nick Alonzo - The iPod</a>
+                </li>
+                </ul>
+            <h2 id="genre4">Music</h2>
+            <ul>
+                <li>
+                    <a href="pages/soapsan_five_songs.html">SOAPSAN - Five Songs</a>
+                </li>
+                <li>
+                    <a href="pages/isosceles_kramer_banjo_beach.html">Iscoceles Kramer - Banjo Beach</a>
+                </li>
+                <li>   
+                    <a href="pages/owen_frankel_sonic_expearmint.html">Owen H. Frankel - Sonic Expearment</a>
+                </li>
+                </ul>
+
+    </div>
+
+
+
+
+        <div id="two">
+            <h2 id="genre1">Poetry</h2>
+            <ul>
+              <li>
+              <a href="pages/maddy_ipema_every_nightmare_i_have.html">Maddy Ipema - "Every nightmare I have starts out as a dream"</a>
+            </li>
+                <li>
+                    <a href="pages/sam_plauche_my_personal_saint.html">Sam Plauche - My Personal Saint</a>
+                </li>
+                <li>
+                    <a href="pages/talia_wright_my_sleep_poem.html">Talia Wright - my sleep poem</a>
+                </li>
+                <li>
+                    <a href="pages/quana_a_black_neighborhood_in_several_forms.html">Quana - a Black neighborhood in several forms</a>
+                </li>
+                <li>
+                    <a href="pages/noah_alonzo_stay_up.html">Noah Alonzo - Stay Up</a>
+                </li>
+                </ul>
+            <h2 id="genre2">Nonfiction</h2>
+            <ul>
+                <li>
+                    <a href="pages/mulan_matthayasack_welcome_to_fabulous_las_vegas.html">Mulan Matthayasack - Welcome To Fabulous Las Vegas</a>
+                </li>
+            </ul>
+            <label for="toggle-1"><p id="playlistlink">Check out the playlist by the contributors and editors</p>
+            </label>
+            <input type="checkbox" id="toggle-1">
+            <div id="playlist">
+                <iframe src="https://open.spotify.com/embed/playlist/1DnfKPJ1qGI6G1pjJhAKYX" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        </div>
+
+
+
+
+    </div>
+        <div class="footer">
+          <a href="pages/about.html">About</a><div><a id="night" href="#invert">Night shift</a></div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+
+
+var square = document.getElementsByTagName("body"),
+    clickMe = document.getElementById("night"); //Keeping it unobstrusive
+function doDemo () {
+
+  var button = this;
+  square.style.filter = "invert(1.0)";
+  button.setAttribute("disabled", "true");
+  setTimeout(clearDemo, 2000, button);
+}
+
+function clearDemo (button) {
+  var square = document.getElementById("square");
+  square.style.filter = "invert(0.0)";
+  button.removeAttribute("disabled");
+}
+
+clickMe.onclick = doDemo; //Onclick call. Pass no arguments.
+</script>
+
+
+
+</body>

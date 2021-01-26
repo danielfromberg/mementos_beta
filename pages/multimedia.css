@@ -1,0 +1,24 @@
+
+#owensong {
+    margin-left: calc(50% - 175px);
+    margin-right: calc(50% - 175px);
+}
+
+
+#nickvid video {
+  display: block;
+  margin: 0 auto;
+    width: 100%;
+    max-width: 620px;
+    height: 100%;
+
+}
+
+#vid video {
+  display: block;
+  margin: 0 auto;
+    width: 100%;
+    max-width: 620px;
+    height: 100%;
+
+}

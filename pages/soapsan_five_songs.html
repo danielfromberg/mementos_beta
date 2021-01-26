@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="pageStyle.css">
+    <link rel="stylesheet" href="multimedia.css">
+    <link rel="image_src" href="../phonto_1.JPG">
+    <title>Mementos</title>
+<style>
+
+#main {
+    background-image: none;
+        background-color: black;
+        color: red;
+      }
+
+    #playlist{
+    list-style: none;
+    display: initial;
+}
+#playlist li a{
+    color:red;
+    text-decoration: none;
+}
+#playlist .current-song a{
+    color:cyan ;
+    text-decoration: underline;
+}
+
+#playlistControls a{
+    color:cyan ;
+    text-decoration: underline;
+}
+
+
+#playlistControls {
+    width: 100%;
+    color:red;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+audio::-webkit-media-controls-panel {background-image: linear-gradient(gray, black);}
+audio::-webkit-media-controls-mute-button {
+  margin-top: 10px;
+  height: 28px;
+}
+audio::-moz-media-controls-current-time-display {color: white;}
+audio::-moz-media-controls-time-remaining-display {color:white;}
+audio::-moz-media-controls-play-button {background-color:red;  height: 10px; width: 4px; color: white;}
+audio::-moz-media-controls-panel {background-image: linear-gradient(gray, black);}
+audio::-mozt-media-controls-mute-button {
+  margin-top: 10px;
+  height: 28px;
+}
+audio::-moz-media-controls-current-time-display {color: white;}
+audio::-moz-media-controls-time-remaining-display {color:white;}
+audio::-moz-media-controls-play-button {background-color:red;  height: 10px; width: 4px; color: white;}
+
+#audio {
+    background-image: radial-gradient(green, black);
+    padding: 25px;
+}
+
+
+
+@media (max-width: 680px) { 
+
+body{margin: 0;}
+}
+
+#audio {
+width: 100%;
+margin: 0;
+padding: 0;
+}
+
+#audioPlayer {
+width: 100%;
+margin: 0;
+padding: 0;
+}
+
+#playlistControls {
+width: 100%;
+margin: 0;
+padding: 0;
+justify-content: space-evenly;
+}
+
+</style>
+
+
+</head>
+<body>
+
+
+<div class="parent">
+      <a href="../index.html"><div id="heading"></div></a>
+    <div id="main">
+        <a href="../index.html" id="back2">Back</a>
+        <br>
+        <br>
+        <br>
+        <h2 id="titles">Five Songs</h2>
+        <h3 id="titles">By SOAPSAN</h3>
+        <p></p>
+        <br>
+        <p></p>
+        <div id="audio">
+          <audio src="" controls id="audioPlayer">
+              Sorry, your browser doesn't support html5! Please try another.
+          </audio>
+<br><br><br>
+          <ul id="playlist" class="specialAudio">
+              <li><a href="media/MASTER%20CHIEF%20%20MFN%20MIX%201.mp3">MASTER CHIEF</a></li>
+              <li><a href="media/OPERATIONS.mp3">OPERATIONS</a></li>
+              <li><a href="media/WHAT%20IS%20MINE%20%20MFN%20MIX%201.mp3">WHAT IS MINE</a></li>
+              <li><a href="media/DIRTY%20FANTA%20(MASTERED).mp3">DIRTY FANTA</a></li>
+              <li><a href="media/CAPTAIN.mp3">CAPTAIN</a></li>
+          </ul>
+          <div id="playlistControls">
+          <a href="#" onclick="playlist.prevTrack();">Prev Track</a>
+          <a id="" href="#" onclick="playlist.nextTrack();">Next Track</a>
+                </div>
+            </div>
+            
+          <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+          <script src="audioPlayer.js"></script>
+          <script>
+
+              /*
+          Default constructor configuration:
+              autoplay: false,
+              shuffle: false,
+              loop: false,
+              playerId: "audioPlayer",
+              playlistId: "playlist",
+              currentClass: "current-song"
+
+
+      */
+
+              // loads the audio player
+              var config = {
+                autoplay: true,
+                  loop: true,
+                  shuffle: true
+              };
+              var playlist = new AudioPlaylist();
+
+          </script>
+        </div>
+
+
+
+<br><br>
+
+
+    </div>
+
+</div>
+
+<div class="footer">
+    <a href="about.html">About</a>
+  </div>
+
+
+</body>
+</html>
